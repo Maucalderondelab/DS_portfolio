@@ -1,0 +1,56 @@
+/* tabs.css updates */
+.tabs-container {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.tab-buttons {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);  /* Subtle background for container */
+    border-radius: 12px;  /* Rounded corners for container */
+    padding: 5px;
+    margin-bottom: 20px;
+}
+/* Light mode styles */
+body:has([data-theme="light"]) .tab-buttons {
+    background: rgba(0, 0, 0, 0.05);  /* Light mode container background */
+}
+.tab-btn {
+    flex: 1;  /* Make buttons take equal space */
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    padding: 12px 24px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    text-align: center;
+    position: relative;
+}
+
+.tab-btn.active {
+    opacity: 1;
+    background: rgba(3,6,19,255);  /* Subtle blue background when active */
+    border-radius: 8px;
+}
+
+.tab-btn:not(.active):hover {
+    opacity: 10;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.1);
+}
