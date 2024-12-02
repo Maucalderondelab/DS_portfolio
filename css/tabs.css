@@ -6,17 +6,19 @@
 
 .tab-buttons {
     display: flex;
-    background: rgba(255, 255, 255, 0.1);  /* Subtle background for container */
-    border-radius: 12px;  /* Rounded corners for container */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     padding: 5px;
     margin-bottom: 20px;
 }
+
 /* Light mode styles */
 body:has([data-theme="light"]) .tab-buttons {
-    background: rgba(0, 0, 0, 0.05);  /* Light mode container background */
+    background: rgba(0, 0, 0, 0.05);
 }
+
 .tab-btn {
-    flex: 1;  /* Make buttons take equal space */
+    flex: 1;
     background: transparent;
     border: none;
     color: var(--text-light);
@@ -29,9 +31,18 @@ body:has([data-theme="light"]) .tab-buttons {
     position: relative;
 }
 
+.tab-pane {
+    display: none;
+}
+
+/* Add this crucial part */
+.tab-pane.active {
+    display: block;
+}
+
 .tab-btn.active {
     opacity: 1;
-    background: rgba(3,6,19,255);  /* Subtle blue background when active */
+    background: rgba(3,6,19,255);
     border-radius: 8px;
 }
 
@@ -48,9 +59,4 @@ body:has([data-theme="light"]) .tab-buttons {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     transition: transform 0.2s ease;
-}
-
-.experience-item:hover {
-    transform: translateX(5px);
-    background: rgba(255, 255, 255, 0.1);
 }
