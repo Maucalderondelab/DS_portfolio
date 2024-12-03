@@ -1,11 +1,18 @@
-// dark-mode.js
 const themeToggle = document.getElementById('theme-toggle');
 const root = document.documentElement;
 
+// Check for saved theme preference
+const savedTheme = localStorage.getItem('theme') || 'dark';
+setTheme(savedTheme);
+
 themeToggle.addEventListener('click', () => {
-    const isDark = root.style.getPropertyValue('--bg-dark') === '#030613';
-    
-    if (isDark) {
+    const currentTheme = document.body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+});
+
+function setTheme(theme) {
+    if (theme === 'light') {
         root.style.setProperty('--bg-dark', '#ffffff');
         root.style.setProperty('--text-light', '#0a0a0a');
         themeToggle.textContent = '🌙';
@@ -16,4 +23,5 @@ themeToggle.addEventListener('click', () => {
         themeToggle.textContent = '🌞';
         document.body.setAttribute('data-theme', 'dark');
     }
-});
+    localStorage.setItem('theme', theme);
+}
