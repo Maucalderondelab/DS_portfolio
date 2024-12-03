@@ -1,17 +1,19 @@
 /* dark-mode.css */
 :root {
     /* Add new variables */
-    --card-border: rgba(255, 255, 255, 0.6);
-    --project-title-color: #e6f1ff;
-    --project-desc-color: #8892b0;
-    --project-content-bg: rgba(255, 255, 255, 0.1);
-    --tag-bg: rgba(255, 255, 255, 0.1);
-    --tag-text: #ffffff;
-    --link-text: #030613;
-    --link-bg: #ffffff;
-    --kaggle-badge-bg: #ffffff;
-    --position-badge-bg: #20BEFF;
-    --tooltip-bg: #20BEFF;
+    --card-border: rgba(255, 255, 255, 0.6);  /*Contour on the project cards*/
+    --project-title-color: #e6f1ff; /*Projects titles*/
+    --project-desc-color: #ffffffe0; /*text projects cards*/
+    --project-content-bg: rgba(255, 255, 255, 0.1); 
+    --tabs-container-bg-hover: #239ccc; /*crgba(255, 255, 255, 0.1);ontent backgound on the project cards*/
+    --tag-bg: rgba(255, 255, 255, 0.1); /**/
+    --tag-text: #ffffff; /**/
+    --link-text: #030613; /*links sources text*/
+    --link-bg: #ffffff; /**/
+    --kaggle-badge-bg: #ffffff; /**/
+    --position-badge-bg: #239ccc; /**/
+    --tooltip-bg: #20BEFF; /**/
+
 }
 
 [data-theme="light"] {
@@ -20,6 +22,7 @@
     --project-title-color: #1a202c;
     --project-desc-color: #4a5568;
     --project-content-bg: rgba(0, 0, 0, 0.05);
+    --project-content-bg--hover: rgba(0, 0, 0, 0.05);
     --tag-bg: rgba(0, 0, 0, 0.1);
     --tag-text: #1a202c;
     --link-text: #ffffff;
@@ -27,6 +30,7 @@
     --kaggle-badge-bg: #20BEFF;
     --position-badge-bg: #20BEFF;
     --tooltip-bg: #20BEFF;
+
 }
 
 body {

@@ -1,4 +1,17 @@
-  
+ /* dark-mode.css */
+:root {
+    /* Add new variables */
+    --text-light-resume: #030613;
+    --text-light-resume-background: #ffffff;
+    --accent: #ffffff; /*links sources text*/
+}
+
+[data-theme="light"] {
+    /* Light theme values */
+    --text-light-resume: #ffffff;
+    --text-light-resume-background: #030613;
+    --accent: #030613;
+} 
 /* style.css updates */
 body {
     max-width: 1200px;
@@ -16,11 +29,57 @@ nav {
     margin: 0 auto;
 }
 
-.hero {
-    max-width: 1600px;
-    margin: 60px auto;
-    text-align: center;
+#theme-toggle {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    color: var(--text-light);
+    cursor: pointer;
+    background: var(--text-light-resume);
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
 }
+
+#theme-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: -1px 1px 1px 0px var(--text-light-resume-background);
+}
+
+
+
+.hero-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-text h1{
+    flex: 1;
+    font-size: 1.6rem;
+}
+.hero-text {
+    flex: 1;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.2rem;
+}
+
+.profile-photo {
+    width: 250px; /* Adjust size as needed */
+    flex-shrink: 0;
+}
+
+.profile-photo img {
+    width: 80%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid rgba(77, 178, 246, 0.729);;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 .profile-links {
     display: flex;
@@ -37,22 +96,35 @@ nav {
     padding: 10px 20px;
     border-radius: 6px;
     transition: all 0.2s ease;
-    color: var(--text-light);
+}
+.profile-links a i {
+    font-size: 1.4rem;  /* Makes icons slightly larger */
 }
 
 .resume-btn {
-    background: var(--accent);
-    color: var(--text-light);
-    box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
+    display: inline-flex;
+    align-items: center;
+    color: var(--link-text);
+    background-color: var(--link-bg);
+    text-decoration: none;
+    border: 1px solid var(--link-bg);
+    transition: background-color 0.3s ease;
 }
 
 .resume-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+    box-shadow: -3px 5px 8px 2px rgba(77, 178, 246, 0.729);
 }
 
-.profile-links a i {
-    font-size: 1.4rem;  /* Makes icons slightly larger */
+.icons-btn {
+    color: var(--accent);
+    background: var(--text-light-resume);
+    transition: all 0.2s ease;
+}
+
+.icons-btn:hover {
+    opacity: 0.8;  /* Subtle hover effect */
+    color: rgba(77, 178, 246, 0.729);
 }
 
 .nav-links {
@@ -65,10 +137,12 @@ nav {
     text-decoration: none;
     font-size: 1.2rem;
     transition: opacity 0.2s ease;
+    
 }
 
 .nav-links a:hover {
     opacity: 0.8;  /* Subtle hover effect */
+    color: rgba(77, 178, 246, 0.729);
 }
 
 .experience-item {
@@ -262,7 +336,6 @@ nav {
     color: var(--text-light);
 }
 
-
 .kaggle-badge {
     position: absolute;
     top: 10px;
@@ -270,16 +343,46 @@ nav {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: visible;
     background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 3px solid rgba(77, 178, 246, 0.729);
+    cursor: pointer;
 }
 
 .kaggle-badge img {
-    width: 45px; /* Adjust size as needed */
+    width: 45px;
     height: auto;
+}
+
+.kaggle-badge .tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: 100%; /* Changed from bottom: 100% to top: 100% */
+    left: -110; /* Changed from right to left */
+    background-color: #20BEFF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    white-space: nowrap;
+    margin-top: 8px; /* Changed from margin-bottom to margin-top */
+    z-index: 1000;
+}
+
+.kaggle-badge .tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Changed from top: 100% to bottom: 100% */
+    left: 133px; /* Changed from right to left */
+    border: 5px solid transparent;
+    border-bottom-color: #20BEFF; /* Changed from border-top-color to border-bottom-color */
+}
+
+.kaggle-badge:hover .tooltip {
+    visibility: visible;
 }
 
 .position-badge {
@@ -321,12 +424,23 @@ nav {
 .position-badge:hover .tooltip {
     visibility: visible;
 }
-
-
+html {
+    scroll-behavior: smooth;
+}
 
 /* Responsive design */
 @media (max-width: 768px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+    .hero-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 200px; /* Smaller on mobile */
+        margin-bottom: 20px;
     }
 }

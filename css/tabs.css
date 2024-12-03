@@ -1,12 +1,14 @@
 :root {
     /* Add new variables */
     --tabs-container-bg: rgba(255, 255, 255, 0.1);
+    --tabs-container-bg-active: #030613;
     --tab-btn-inactive: 0.7;
     --tab-btn-hover: 1;
 }
 
 [data-theme="light"] {
-    --tabs-container-bg: rgba(0, 0, 0, 0.05);
+    --tabs-container-bg:rgba(0, 0, 0, 0.05);
+    --tabs-container-bg-active: rgb(255, 255, 255);
     /* Other light theme values are already defined in previous sections */
 }
 
@@ -47,7 +49,7 @@
 
 .tab-btn.active {
     opacity: 1;
-    background: var(--active-tab-bg);
+    background: var(--tabs-container-bg-active);
     border-radius: 8px;
 }
 
@@ -61,7 +63,7 @@
     gap: 1rem;
     padding: 15px;
     margin-bottom: 15px;
-    background: var(--experience-item-bg);
+    background:  var(--tabs-container-bg);
     border-radius: 8px;
     transition: transform 0.2s ease;
     color: var(--text-light);

@@ -15,246 +15,272 @@
 <body>
     <nav>
         <div class="nav-links">
-            <a href="#home">home</a>
+            <a href="#hero">home</a>
             <a href="#projects">projects</a>
-            <a href="#contact">contact</a>
+            <a href="/contact.html">contact</a>
         </div>
-        <button id="theme-toggle">🌞</button>
+        <button id="theme-toggle">
+            <i class="fas fa-sun"></i>
+        </button>
+        
     </nav>
 
     <main>
         <section class="hero">
-            <h1>hi, I'm Mauricio 👋</h1>
-            <p>Data Scientist and AI Developer</p>
-            <div class="profile-links">
-                <a href="#" class="resume-btn" target="_blank">
-                    <i class="fas fa-file-alt"></i>
-                    <span>Resume</span>
-                </a>
-                <a href="https://www.linkedin.com/in/mcalderondelab/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/Maucalderondelab" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Mauricio
+                        from Bolivia <img src="https://flagcdn.com/bo.svg" width="30" alt="Bolivian flag"> now based in Spain <img src="https://flagcdn.com/es.svg" width="30" alt="Spanish flag">
+                    </h1>
+                    <p>Machine learning and AI enthusiast with a strong physics foundation, self-driven learning to develop and deploy innovative AI solutions.</p>
+                    <div class="profile-links">
+                        <a href="#" class="resume-btn" target="_blank">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Resume</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mcalderondelab/" target="_blank" class="icons-btn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Maucalderondelab" target="_blank" class="icons-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:maucalderonrg@gmail.com" target="_blank" class="icons-btn">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-photo">
+                    <img src="assets/images/profile-pics/profile_1.jpg" alt="Mauricio profile photo">
+                </div>
             </div>
         </section>
 
-        <div class="tabs-container">
-            <div class="tab-buttons">
-                <button class="tab-btn active" data-tab="work">Work</button>
-                <button class="tab-btn" data-tab="education">Education</button>
-            </div>
-            <div id="work" class="tab-pane active">
-                <div class="experience-item">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="assets/images/logos/hogarth_logo.png" alt="Hogarth Logo">
+        <section id="containers">
+            <div class="tabs-container">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="work">Work</button>
+                    <button class="tab-btn" data-tab="education">Education</button>
+                </div>
+                <div id="work" class="tab-pane active">
+                    <div class="experience-item">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="assets/images/logos/hogarth_logo.png" alt="Hogarth Logo">
+                            </div>
                         </div>
-                    </div>
-                    <div class="company-info">
-                        <p class="period">May 2024- Nov 2024</p>
-                        <h3 class="company-name">Hogarth Worldwide </h3>
-                        <p class="job-title"> AI Developer Trainee</p>
-                        
-                        <div class="description-section">
-                            <p>- Designed and developed an advanced conversational agent using LLM. Utilized Mistral as the base model, integrating it with the Langchain and DSPy frameworks. This agent includes a categorization and autocorrection layer that ensures response accuracy and has the capability to query an SQL database to retrieve correct numerical information.</p>
-                            <p>- Supported the Content AI team by performing multiple face-swaps, which were implemented in advertising campaigns based exclusively on AI-generated images, enhancing content personalization and visual impact.</p>
-                            <p>- Worked on the development of an automatic subtitling system using Fast-Whisper as the main transcription model. Contributed to the creation of simultaneous and multilingual subtitles, improving the accessibility and reach of audiovisual content.</p>
+                        <div class="company-info">
+                            <p class="period">May 2024- Nov 2024</p>
+                            <h3 class="company-name">Hogarth Worldwide </h3>
+                            <p class="job-title"> AI Developer Trainee</p>
                             
+                            <div class="description-section">
+                                <p>
+                                    <ul>
+                                        <li>Designed and developed an advanced conversational agent using LLM. Utilized Mistral as the base model, integrating it with the Langchain and DSPy frameworks. This agent includes a categorization and autocorrection layer that ensures response accuracy and has the capability to query an SQL database to retrieve correct numerical information.</li>
+                                        <li>Supported the Content AI team by performing multiple face-swaps, which were implemented in advertising campaigns based exclusively on AI-generated images, enhancing content personalization and visual impact.</li>
+                                        <li>Worked on the development of an automatic subtitling system using Fast-Whisper as the main transcription model. Contributed to the creation of simultaneous and multilingual subtitles, improving the accessibility and reach of audiovisual content.</li>
+                                    </ul>
+                                </p>                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="assets/images/logos/pisos-mamut-logo.png" alt="Mamut Logo">
+                            </div>
+                        </div>
+                        <div class="company-info">
+                            <p class="period">Jun 2023- Oct 2023</p>
+                            <h3 class="company-name">Pisos Mamut</h3>
+                            <p class="job-title"> Data Scientist Internship</p>
+                            
+                            <div class="description-section">
+                                <p>
+                                     <ul>
+                                        <li>Collaboration with the sales and production teams to define KPIs and key metrics for measuring environmental impact</li>                                    <li>• Item 2</li>
+                                        <li>Performed descriptive and statistical analysis of sustainability data stored in Excel databases from 2019 to 2023.</li>
+                                        <li>Used data analysis metrics like Power Query to obtain valuable information on the impact of activities on sustainability.</li>
+                                        <li>Developed 3 interactive dashboards with Power BI to visualize the impact of activities on sustainability in real-time.</li>
+                                    </ul>
+                                </p>
+                     
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div id="education" class="tab-pane">
+                    <div class="experience-item">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="assets/images/logos/uem-logo.png" alt="UEM logo">
+                            </div>
+                        </div>
+                        <div class="company-info">
+                            <p class="period">Oct 2023- Oct 2024</p>
+                            <h3 class="company-name">Universidad Europea de Madrid</h3>
+                            <p class="job-title"> MS. Big Data</p>
+                            <div class="education-content">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        <i class="code-icon"></i> AI-Powered Image Editing: A Synergy of GroundingDINO, SAM, and Stable Diffusion
+                                    </a>
+                                </div>
+                                <p class="project-description">                                       
+                                        <p> In my final project:
+                                        <ul>
+                                            <li>I integrated three advanced AI models GroundingDINO, SAM, and Stable Diffusion. </li>
+                                            <li>The goal was to develop a prototype image editor that demonstrates the combined capabilities of these models.</li>   
+                                        </ul>
+                                        The project underscores the transformative potential of AI in image processing, especially when powered by Big Data technologies. This prototype not only demonstrates what's possible today but also lays the foundation for future research and improvements in this rapidly evolving field.
+                                    </p>
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">HF</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="assets/images/logos/umsa-logo.png" alt="UMSA logo">
+                            </div>
+                        </div>
+                        <div class="company-info">
+                            <p class="period">Aug 2016 - Nov 2022</p>
+                            <h3 class="company-name">Universidad Mayor de San Andres</h3>
+                            <p class="job-title"> BS. Physics</p>
+
+                            <div class="education-content">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        <i class="code-icon"></i> Prediction of the dynamics of the Lorenz-96 attractor using RNN-LSTM and LSTM-hybrid.
+                                    </a>
+                                </div>
+                                <p class="project-description">
+                                    
+                                </p>
+                                <p class="project-description">
+                                    <p> As a research assistant I developed my final project:</p>
+                                    <p>
+                                        <ul>
+                                            <li>Studied the dynamics of the Lorenz-96 attractor</li>
+                                            <li>Employed a Long Short-Term Memory (LSTM) for the prediction task, which is particularly well-suited for long-term predictions due to its architecture.</li>
+                                            <li>Applied a hybrid model that incorporates empirical values into the LSTM framework</li>
+                                            <li>The hybrid LSTM achieves temporal predictions that are <strong>2.82 times more accurate</strong> than the standard LSTM model</li>
+                                        </ul>
+                                        
+                                    </p>
+                                <div class="project-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">HF</span>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="experience-item">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="assets/images/logos/pisos-mamut-logo.png" alt="Mamut Logo">
-                        </div>
-                    </div>
-                    <div class="company-info">
-                        <p class="period">Jun 2023- Oct 2023</p>
-                        <h3 class="company-name">Pisos Mamut</h3>
-                        <p class="job-title"> Data Scientist Internship</p>
-                        
-                        <div class="description-section">
-                            <p>- Collaboration with the sales and production teams to define KPIs and key metrics for measuring environmental impact.</p>
-                            <p>- Performed descriptive and statistical analysis of sustainability data stored in Excel databases from 2019 to 2023.</p>
-                            <p>- Used data analysis metrics like Power Query to obtain valuable information on the impact of activities on sustainability.</p>
-                            <p>- Developed 3 interactive dashboards with Power BI to visualize the impact of activities on sustainability in real-time.</p>      
-                        </div>
-                    </div>
-                </div>
-                  
+
             </div>
-            
-            <div id="education" class="tab-pane">
-                <div class="experience-item">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="assets/images/logos/uem-logo.png" alt="UEM logo">
+        </section>  
+        <section id="projects">
+            <div class="projects-section" id="#projects">
+                <div class="section-header">
+                    <h2 class="section-title">Projects & Competitions</h2>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- First Project -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-thumbnails/RAG-mastery.png" alt="Project Screenshot">
                         </div>
-                    </div>
-                    <div class="company-info">
-                        <p class="period">Oct 2023- Oct 2024</p>
-                        <h3 class="company-name">Universidad Europea de Madrid</h3>
-                        <p class="job-title"> MS. Big Data</p>
-                        <div class="education-content">
+                        <div class="project-content">
+                            <h3 class="project-title">RAG Mastery</h3>
+                            <p class="project-description">
+                                Dedicated to mastering Retrieval-Augmented Generation (RAG) and Agents, covering topics such as Simple RAG, RAG with chat history, RAG with a Vector Database, Self- Corrective RAG, and advanced Agent techniques.e.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Pytorch</span>
+                                <span class="tag">ML</span>
+                            </div> 
                             <div class="project-links">
-                                <a href="#" class="project-link">
+                                <a href="https://github.com/Maucalderondelab/RAG-Mastery" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i>
-                                    <i class="code-icon"></i> Image editor with 3 artifitial inteligence models
+                                    <i class="code-icon"></i> Source
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                    <!-- Second Project -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/project-thumbnails/SV-LVII.png" alt="Project Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sentiment analysis SB-LVII</h3>
                             <p class="project-description">
-                                 
+                                Analyzed the sentiment of comments about the 2024 Super Bowl using HuggingFace's pre-trained Transformer based (RoBERTa) model, revealing that over 56% of the comments were positive and the rest where negative or neutral.
+
+
                             </p>
+                            <div class="project-tags">
+                                <span class="tag">Pytorch</span>
+                                <span class="tag">ML</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://github.com/Maucalderondelab/Sentiment-Analysis-SB-LVII" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <i class="code-icon"></i> Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Third Project -->
+                    
+                    <div class="project-card">
+                        <div class="kaggle-badge">
+                            <img src="assets/images/logos/kaggle-logo.png">
+                            <div class="tooltip"> Kaggle Competition</div>
+                        </div>
+                        <div class="project-image">
+                            <img src="assets/images/project-thumbnails/kaggle_com1.png" alt="Project Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Stable Diffusion - Image to Prompts</h3>
                             <p class="project-description">
-                                Integration and joint operation of three advanced AI models
-                                (GroundingDINO, SAM, and Stable Diffusion) in the context of image editing. An in-
-                                depth analysis of the synergy between these models was conducted, developing a basic
-                                image editor prototype that integrates their capabilities. The study includes detailed
-                                documentation of the integration process, highlighting the technical challenges encountered
-                                and the solutions implemented. The main results include a practical demonstration of the
-                                integration in a functional editor, the identification of new potential workflows, and an
-                                analysis of the strengths and limitations of each model. The conclusions underscore the new
-                                possibilities in advanced image editing offered by this integration, the technical challenges
-                                overcome, and the implications of using Big Data and AI technologies in image processing.
-                                The developed prototype serves as a platform for future research and improvements in
-                                this field, significantly contributing to the knowledge about the current capabilities of AI
-                                models in image processing tasks 
+                                Trained 3 different models. I used a regression-KNN, as well as BEiTv2-large and ViT-large-384, which are pre-trained models based on Transformers neural networks. 
                             </p>
                             <div class="project-tags">
                                 <span class="tag">Python</span>
                                 <span class="tag">HF</span>
                             </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <div class="logo-container">
-                        <div class="logo">
-                            <img src="assets/images/logos/umsa-logo.png" alt="UMSA logo">
-                        </div>
-                    </div>
-                    <div class="company-info">
-                        <p class="period">Aug 2016 - Nov 2022</p>
-                        <h3 class="company-name">Universidad Mayor de San Andres</h3>
-                        <p class="job-title"> BS. Physics</p>
-
-                        <div class="education-content">
                             <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                    <i class="code-icon"></i> Prediction of the dynamics of the Lorenz-96 attractor using RNN-LSTM and LSTM-hybrid.
+                                <a href="https://www.kaggle.com/code/mauriciocalderonb/sdip-clip-knnregression-beitv2-vit" target="_blank" class="project-link">
+                                    <i class="fab fa-kaggle"></i>
+                                    <i class="code-icon"></i> Source
                                 </a>
                             </div>
-                            <p class="project-description">
-                                 
-                            </p>
-                            <p class="project-description">
-                                Propose the study of temporal prediction of the Lorenz-96 system usign Recurrent Neural Networks(RNN). We use a variant of the RNN called LSTM, wich due to his architecture is useful for long termn predictions. We improve the prediction of LSTM using a hybrid model of LSTM, wich cotains empirical values. We find that using the hybrid LSTM we are able to make 2.82 times better temporal predicctions compared to a LSTM. We also perform an analysis of the root mean square error in the predictions made by the LSTM and LSTM-hybrid,and we find that the forecast error of the empiric model is the one that remains low for the longest time. 
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">HF</span>
+                            <div class="position-badge">
+                                <span>Rank: 170/1231</span>
+                                <div class="tooltip">Top 14%</div>
                             </div>
-                            
                         </div>
                     </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="projects-section" href="#projects">
-            <div class="section-header">
-                <h2 class="section-title">Projects & Competitions</h2>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- First Project -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/project-thumbnails/RAG-mastery.png" alt="Project Screenshot">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">RAG Mastery</h3>
-                        <p class="project-description">
-                            Dedicated to mastering Retrieval-Augmented Generation (RAG) and Agents, covering topics such as Simple RAG, RAG with chat history, RAG with a Vector Database, Self- Corrective RAG, and advanced Agent techniques.e.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Pytorch</span>
-                            <span class="tag">ML</span>
-                        </div> 
-                        <div class="project-links">
-                            <a href="https://github.com/Maucalderondelab/RAG-Mastery" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                                <i class="code-icon"></i> Source
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second Project -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/images/project-thumbnails/SV-LVII.png" alt="Project Screenshot">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Sentiment analysis SB-LVII</h3>
-                        <p class="project-description">
-                            Analyzed the sentiment of comments about the 2024 Super Bowl using HuggingFace's pre-trained Transformer based (RoBERTa) model, revealing that over 56% of the comments were positive and the rest where negative or neutral.
-
-
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Pytorch</span>
-                            <span class="tag">ML</span>
-                        </div>
-                        
-                        <div class="project-links">
-                            <a href="https://github.com/Maucalderondelab/Sentiment-Analysis-SB-LVII" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                                <i class="code-icon"></i> Source
-                            </a>
-                        </div>
-                    </div>
+                    <!-- Repeat project-card div 5 more times for 2x3 grid -->
                 </div>
                 
-                <!-- Third Project -->
-                
-                <div class="project-card">
-                    <div class="kaggle-badge">
-                        <img src="assets/images/logos/kaggle-logo.png" alt="Kaggle Competition">
-                    </div>
-                    <div class="project-image">
-                        <img src="assets/images/project-thumbnails/kaggle_com1.png" alt="Project Screenshot">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Stable Diffusion - Image to Prompts</h3>
-                        <p class="project-description">
-                            Trained 3 different models. I used a regression-KNN, as well as BEiTv2-large and ViT-large-384, which are pre-trained models based on Transformers neural networks. 
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">HF</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://www.kaggle.com/code/mauriciocalderonb/sdip-clip-knnregression-beitv2-vit" target="_blank" class="project-link">
-                                <i class="fab fa-kaggle"></i>
-                                <i class="code-icon"></i> Source
-                            </a>
-                        </div>
-                        <div class="position-badge">
-                            <span>Rank: 170/1231</span>
-                            <div class="tooltip">Top 14%</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat project-card div 5 more times for 2x3 grid -->
             </div>
-            
-        </div>
+        </section>
     </main>
     <script src="js/tabs.js"></script>
     <script src="js/dark-mode.js"></script>
