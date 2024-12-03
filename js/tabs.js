@@ -16,3 +16,4 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => switchTab(btn));
     });
 });
+
