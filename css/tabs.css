@@ -34,7 +34,7 @@
     cursor: pointer;
     opacity: var(--tab-btn-inactive);
     transition: all 0.3s ease;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     position: relative;
 }
@@ -60,6 +60,7 @@
 .experience-item {
     display: flex;
     align-items: flex-start;
+    font-size: 1.2rem;
     gap: 1rem;
     padding: 15px;
     margin-bottom: 15px;
