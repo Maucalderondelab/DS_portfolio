@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mauricio - Data Scientist</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .contact-title {
+            font-size: 3rem;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-input {
+            padding: 12px;
+            border: 2px solid var(--card-border);
+            border-radius: 8px;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .send-button {
+            background:var(--accent);
+            color: var(--text-light-resume);
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .send-button:hover {
+            transform: translateY(-2px);        
+            box-shadow: -3px 5px 8px 2px rgba(77, 178, 246, 0.729);
+
+        }
+
+        .privacy-text {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        .privacy-text a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-links">
+            <a href="../index.html">home</a>
+            <a href="../index.html#projects">projects</a>
+            <a href="#contact">contact</a>
+        </div>
+        <button id="theme-toggle">🌞</button>
+    </nav>
+
+    <div class="contact-container">
+        <h1 class="contact-title">contact me.</h1>
+        <form class="contact-form">
+            <input type="text" class="form-input" placeholder="Name" required>
+            <input type="email" class="form-input" placeholder="Email" required>
+            <textarea class="form-input form-textarea" placeholder="Leave feedback about the site, career opportunities or just to say hello etc." required></textarea>
+            <button type="submit" class="send-button">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <!-- Add your dark mode script -->
+    <script src="../js/dark-mode.js"></script>
+</body>
+</html>
